@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>新的开始 | 刘国舟的博客</title>
+    <title>创建博客踩过的坑 | 刘国舟的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Guzman Liu">
     
-    <meta name="description" content="这是新的开始，我用hexo创建了第一篇文章。
-通过下面的命令，就可以创建新文章12D:\workspace\javascript\nodejs-hexo&amp;gt;hexo new 新的开始[info] File created at D:\workspace\javascript\nodejs-hex">
+    <meta name="description" content="文章语法： 基本信息：标题，发布日期，分类目录，标签，类型，固定发布链接 正文：markdown语法和Swig语法(掌握一个就行) 特殊标记：引用，链接，图片，代码块，iframe，youtube视频
+ 可参照文章：http://blog.fens.me/hexo-blog-github/部署步骤
+">
     
     
     
@@ -66,15 +67,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/gzliu/2016/11/06/test/" title="新的开始" itemprop="url">新的开始</a>
+      <a href="/gzliu/2016/11/06/创建博客踩过的坑/" title="创建博客踩过的坑" itemprop="url">创建博客踩过的坑</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://blog.guzman.me" title="Guzman Liu">Guzman Liu</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-11-05T18:32:55.399Z" itemprop="datePublished">2016-11-06</time>
-    更新日期:<time datetime="2016-11-05T18:38:01.699Z" itemprop="dateModified">2016-11-06</time>
+    <time datetime="2016-11-05T20:02:26.024Z" itemprop="datePublished">2016-11-06</time>
+    更新日期:<time datetime="2016-11-05T20:06:57.797Z" itemprop="dateModified">2016-11-06</time>
     
   </p>
 </header>
@@ -83,16 +84,42 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">1.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码块"><span class="toc-number">2.</span> <span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#链接"><span class="toc-number">3.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片"><span class="toc-number">4.</span> <span class="toc-text">图片</span></a></li></ol>
+		
 		</div>
 		
-		<p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-<p>通过下面的命令，就可以创建新文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">D:\workspace\javascript\nodejs-hexo&gt;hexo new 新的开始</div><div class="line">[info] File created at D:\workspace\javascript\nodejs-hexo\source\_posts\新的开始.md</div></pre></td></tr></table></figure></p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
-<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><figure class="highlight plain"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.compact([0, 1, false, 2, ‘’, 3]);</div><div class="line">=&gt; [1, 2, 3]</div></pre></td></tr></table></figure>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><a href="http://blog.fens.me" title="粉丝日志" target="_blank">粉丝日志</a>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><img src="/gzliu/images/fens.me.png" width="400" height="600" title="这是一张图片">  
+		<p>文章语法：<br> 基本信息：标题，发布日期，分类目录，标签，类型，固定发布链接<br> 正文：markdown语法和Swig语法(掌握一个就行)<br> 特殊标记：引用，链接，图片，代码块，iframe，youtube视频</p>
+<p> 可参照文章：<a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">http://blog.fens.me/hexo-blog-github/</a><br>部署步骤</p>
+<p>每次部署的步骤，可按以下三步来进行。</p>
+<pre><code>hexo clean
+
+hexo generate
+
+hexo deploy
+</code></pre><p>一些常用命令：</p>
+<p>hexo new”postName” #新建文章</p>
+<p>hexo new page”pageName” #新建页面</p>
+<p>hexo generate #生成静态页面至public目录</p>
+<p>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</p>
+<p>hexo deploy #将.deploy目录部署到GitHub</p>
+<p>hexo help # 查看帮助</p>
+<p>hexo version #查看Hexo的版本</p>
+<p>报错总结<br>ERROR Deployer not found: git 或者 ERROR Deployer not found: github</p>
+<p>解决方法： npm install hexo-deployer-git –save</p>
+<p>如发生报错： ERROR Process failed: layout/.DS_Store , 那么进入主题里面layout和_partial目录下，使用删除命令：</p>
+<p>rm-rf.DS_Store</p>
+<p>ERROR Plugin load failed: hexo-server</p>
+<p>原因：</p>
+<p>Besides,utilities are separated into a standalone module.hexo.util is not reachable anymore.</p>
+<p>解决方法，执行命令：</p>
+<p>sudo npm install hexo-server</p>
+<p>执行命令hexo server，提示：Usage: hexo ….</p>
+<p>原因：</p>
+<p>我认为是没有生成本地服务</p>
+<p>解决方法，执行命令：</p>
+<p>npm install hexo-server –save</p>
+<p>提示：hexo-server@0.1.2 node_modules/hexo-server</p>
+<p>文／潘柏信（简书作者）<br>原文链接：<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">http://www.jianshu.com/p/465830080ea9</a><br>著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -101,7 +128,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://blog.guzman.me/gzliu/2016/11/06/test/" data-title="新的开始 | 刘国舟的博客" data-tsina="null" class="share clearfix">
+  <div data-url="http://blog.guzman.me/gzliu/2016/11/06/创建博客踩过的坑/" data-title="创建博客踩过的坑 | 刘国舟的博客" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -110,19 +137,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/gzliu/2016/11/06/创建博客踩过的坑/" title="创建博客踩过的坑">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  创建博客踩过的坑</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/gzliu/2016/11/06/hello-world/"  title="Hello World">
+<a href="/gzliu/2016/11/06/test/"  title="新的开始">
  <strong>NEXT:</strong><br/> 
- <span>Hello World
+ <span>新的开始
 </span>
 </a>
 </div>
@@ -135,7 +154,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">1.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码块"><span class="toc-number">2.</span> <span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#链接"><span class="toc-number">3.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片"><span class="toc-number">4.</span> <span class="toc-text">图片</span></a></li></ol>
+  
   </div>
 
 <div id="asidepart">
