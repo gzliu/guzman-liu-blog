@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="刘国舟的博客">
 <meta property="og:description" content="文章语法： 基本信息：标题，发布日期，分类目录，标签，类型，固定发布链接 正文：markdown语法和Swig语法(掌握一个就行) 特殊标记：引用，链接，图片，代码块，iframe，youtube视频
  可参照文章：http://blog.fens.me/hexo-blog-github/ Hexo官方地址：https://hexo.io/zh-cn/docs/configuration.html">
-<meta property="og:updated_time" content="2016-11-06T13:06:33.814Z">
+<meta property="og:updated_time" content="2016-11-06T14:07:49.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="创建博客踩过的坑">
 <meta name="twitter:description" content="文章语法： 基本信息：标题，发布日期，分类目录，标签，类型，固定发布链接 正文：markdown语法和Swig语法(掌握一个就行) 特殊标记：引用，链接，图片，代码块，iframe，youtube视频
@@ -24,9 +24,9 @@
     
 
     
-        <link rel="alternate" href="/" title="刘国舟的博客" type="application/atom+xml" />
-    
 
+    
+        <link rel="icon" href="/gzliu-blog/assert/img/favicon.ico" />
     
 
     <link rel="stylesheet" href="/gzliu-blog/libs/font-awesome/css/font-awesome.min.css">
@@ -170,8 +170,7 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
             <p>文章语法：<br> 基本信息：标题，发布日期，分类目录，标签，类型，固定发布链接<br> 正文：markdown语法和Swig语法(掌握一个就行)<br> 特殊标记：引用，链接，图片，代码块，iframe，youtube视频</p>
-<p> 可参照文章：<a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">http://blog.fens.me/hexo-blog-github/</a><br> Hexo官方地址：<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">https://hexo.io/zh-cn/docs/configuration.html</a><br> 引用块<br>在文章中插入引言，可包含作者、来源和标题。<br><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
-</blockquote></p>
+<p> 可参照文章：<a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">http://blog.fens.me/hexo-blog-github/</a><br> Hexo官方地址：<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">https://hexo.io/zh-cn/docs/configuration.html</a><br> 选用的主题地址：<a href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="external">https://github.com/ppoffice/hexo-theme-hueman</a></p>
 <p> 部署步骤</p>
 <p>每次部署的步骤，可按以下三步来进行。</p>
 <pre><code>hexo clean
@@ -179,30 +178,18 @@ var _hmt = _hmt || [];
 hexo generate
 
 hexo deploy
-</code></pre><p>一些常用命令：</p>
-<p>hexo new”postName” #新建文章</p>
-<p>hexo new page”pageName” #新建页面</p>
-<p>hexo generate #生成静态页面至public目录</p>
-<p>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</p>
-<p>hexo deploy #将.deploy目录部署到GitHub</p>
-<p>hexo help # 查看帮助</p>
-<p>hexo version #查看Hexo的版本</p>
-<p>报错总结<br>ERROR Deployer not found: git 或者 ERROR Deployer not found: github</p>
-<p>解决方法： npm install hexo-deployer-git –save</p>
-<p>如发生报错： ERROR Process failed: layout/.DS_Store , 那么进入主题里面layout和_partial目录下，使用删除命令：</p>
-<p>rm-rf.DS_Store</p>
+</code></pre><p>一些常用命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">hexo new&quot;postName&quot; #新建文章</div><div class="line"></div><div class="line">hexo new page&quot;pageName&quot; #新建页面</div><div class="line"></div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line"></div><div class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</div><div class="line"></div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line"></div><div class="line">hexo help # 查看帮助</div><div class="line"></div><div class="line">hexo version #查看Hexo的版本</div></pre></td></tr></table></figure></p>
+<p>报错总结<br>ERROR Deployer not found: git 或者 ERROR Deployer not found: github<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">解决方法： npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>如发生报错： ERROR Process failed: layout/.DS_Store , 那么进入主题里面layout和_partial目录下，使用删除命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm-rf.DS_Store</div></pre></td></tr></table></figure></p>
 <p>ERROR Plugin load failed: hexo-server</p>
 <p>原因：</p>
 <p>Besides,utilities are separated into a standalone module.hexo.util is not reachable anymore.</p>
-<p>解决方法，执行命令：</p>
-<p>sudo npm install hexo-server</p>
+<p>解决方法，执行命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install hexo-server</div></pre></td></tr></table></figure></p>
 <p>执行命令hexo server，提示：Usage: hexo ….</p>
 <p>原因：</p>
 <p>我认为是没有生成本地服务</p>
-<p>解决方法，执行命令：</p>
-<p>npm install hexo-server –save</p>
+<p>解决方法，执行命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-server --save</div></pre></td></tr></table></figure></p>
 <p>提示：hexo-server@0.1.2 node_modules/hexo-server</p>
-<p>文／潘柏信（简书作者）<br>原文链接：<a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">http://www.jianshu.com/p/465830080ea9</a><br>著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</p>
 
         </div>
         <footer class="article-footer">
@@ -210,7 +197,7 @@ hexo deploy
 
 
 
-    <a data-url="http://blog.guzman.me/gzliu-blog/2016/11/06/创建博客踩过的坑/" data-id="civ6oiwfe0001zcr7qzvv3nwy" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.guzman.me/gzliu-blog/2016/11/06/创建博客踩过的坑/" data-id="civ6qs5sv00048wr7vxrisiox" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -329,48 +316,8 @@ hexo deploy
             
                 
                 <li>
-                    <a class="social-tooltip" title="twitter" href="/gzliu-blog/" target="_blank">
-                        <i class="icon fa fa-twitter"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="facebook" href="/gzliu-blog/" target="_blank">
-                        <i class="icon fa fa-facebook"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="google-plus" href="/gzliu-blog/" target="_blank">
-                        <i class="icon fa fa-google-plus"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                    <a class="social-tooltip" title="github" href="https://github.com/gzliu/" target="_blank">
                         <i class="icon fa fa-github"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="weibo" href="/gzliu-blog/" target="_blank">
-                        <i class="icon fa fa-weibo"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
-                    <a class="social-tooltip" title="rss" href="/gzliu-blog/" target="_blank">
-                        <i class="icon fa fa-rss"></i>
                     </a>
                 </li>
                 
@@ -426,7 +373,7 @@ hexo deploy
                             <a href="/gzliu-blog/2016/11/06/test/" class="thumbnail">
     
     
-        <span style="background-image:url(/gzliu-blog/images/fens.me.png)" alt="新的开始" class="thumbnail-image"></span>
+        <span style="background-image:url(/gzliu-blog/assert/blogImg/L.jpg)" alt="新的开始" class="thumbnail-image"></span>
     
     
 </a>
@@ -434,7 +381,7 @@ hexo deploy
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
+                            <p class="item-category"><a class="article-category-link" href="/gzliu-blog/categories/博客/">博客</a></p>
                             <p class="item-title"><a href="/gzliu-blog/2016/11/06/test/" class="title">新的开始</a></p>
                             <p class="item-date"><time datetime="2016-11-05T18:32:55.399Z" itemprop="datePublished">2016-11-06</time></p>
                         </div>
@@ -454,7 +401,7 @@ hexo deploy
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
+                            <p class="item-category"><a class="article-category-link" href="/gzliu-blog/categories/博客/">博客</a></p>
                             <p class="item-title"><a href="/gzliu-blog/2016/11/06/hello-world/" class="title">Hello World</a></p>
                             <p class="item-date"><time datetime="2016-11-05T18:16:42.562Z" itemprop="datePublished">2016-11-06</time></p>
                         </div>
@@ -469,7 +416,7 @@ hexo deploy
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/gzliu-blog/categories/博客/">博客</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/gzliu-blog/categories/博客/">博客</a><span class="category-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -489,7 +436,7 @@ hexo deploy
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/gzliu-blog/tags/旧事/">旧事</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/gzliu-blog/tags/经验/">经验</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/gzliu-blog/tags/旧事/">旧事</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/gzliu-blog/tags/经验/">经验</a><span class="tag-list-count">3</span></li></ul>
         </div>
     </div>
 
